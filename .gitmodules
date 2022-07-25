@@ -1,0 +1,3 @@
+[submodule "InnoSetup/submodules"]
+	path = InnoSetup/submodules
+	url = https://github.com/perhseges/submodules.git

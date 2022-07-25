@@ -1,0 +1,21 @@
+name: Test submodule
+on:
+   workflow_dispatch: 
+
+jobs:
+
+  runner:
+    
+    name: Test
+    
+    runs-on: windows-latest
+    
+    steps:
+
+      - uses: actions/checkout@v2
+
+      - name: TestRunner
+        id: ExecPwsh
+        run: |
+            Get-ChildItem -Path .. -Recurse
+        shell: pwsh
